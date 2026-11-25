@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>हमारे Solar Projects | SK Solar Bikaner</title>
+  <meta name="description" content="SK Solar Bikaner के rooftop solar और elevated solar canopy projects देखें। अपने घर या business के लिए free site survey बुक करें।" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/shared.css" />
+  <style>
+    .projects-hero {
+      min-height: min(680px, calc(100vh - 70px));
+      background: #062e23;
+    }
+
+    .projects-hero .page-hero-bg {
+      object-position: center 54%;
+    }
+
+    .projects-hero .page-hero-overlay {
+      background:
+        linear-gradient(90deg, rgba(4, 33, 26, 0.88) 0%, rgba(4, 33, 26, 0.72) 48%, rgba(4, 33, 26, 0.25) 100%),
+        linear-gradient(0deg, rgba(4, 33, 26, 0.32), transparent 55%);
+    }
+
+    .projects-hero .page-hero-content {
+      width: min(1120px, 100%);
+      text-align: left;
+      padding-top: 6rem;
+      padding-bottom: 5rem;
+    }
+
+    .projects-hero .page-hero-content h1,
+    .projects-hero .page-hero-content p {
+      max-width: 700px;
+      margin-left: 0;
+    }
+
+    .projects-hero .breadcrumb {
+      margin-top: 0.4rem;
+    }
+
+    .projects-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.8rem;
+    }
+
+    .projects-hero-actions .btn-outline {
+      border-color: rgba(255, 255, 255, 0.75);
+      color: #fff;
+    }
+
+    .projects-hero-actions .btn-outline:hover {
+      background: #fff;
+      color: #064e3b;
+    }
+
+    .projects-menu-button {
+      border: 0;
+      background: transparent;
+      color: #fff;
+    }
+
+    .project-intro {
+      padding-bottom: 2rem;
+    }
+
+    .project-filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin: 0 auto 2.4rem;
+    }
+
+    .project-filter {
+      border: 1px solid rgba(6, 78, 59, 0.16);
+      border-radius: 999px;
+      padding: 0.7rem 1.25rem;
+      background: #fff;
+      color: #36534a;
+      font: 600 0.9rem 'Inter', sans-serif;
+      cursor: pointer;
+      transition: color 0.2s, background 0.2s, border-color 0.2s, transform 0.2s;
+    }
+
+    .project-filter:hover {
+      transform: translateY(-2px);
+      border-color: #10b981;
+    }
+
+    .project-filter[aria-pressed="true"] {
+      border-color: #064e3b;
+      background: #064e3b;
+      color: #fff;
+      box-shadow: 0 7px 18px rgba(6, 78, 59, 0.18);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.6rem;
+    }
+
+    .project-card {
+      overflow: hidden;
+      border: 1px solid rgba(6, 78, 59, 0.1);
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 10px 32px rgba(6, 46, 35, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 46px rgba(6, 46, 35, 0.14);
+    }
+
+    .project-card[hidden] {
+      display: none;
+    }
+
+    .project-image-wrap {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 10;
+      background: #e8f0ec;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .project-card:hover .project-image {
+      transform: scale(1.04);
+    }
+
+    .project-type {
+      position: absolute;
+      left: 1rem;
+      bottom: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.5rem 0.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      border-radius: 999px;
+      background: rgba(4, 33, 26, 0.8);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      backdrop-filter: blur(8px);
+    }
+
+    .project-copy {
+      padding: 1.45rem 1.5rem 1.6rem;
+    }
+
+    .project-location {
+      color: #0b7656;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .project-copy h2 {
+      margin: 0.45rem 0 0.55rem;
+      color: #062e23;
+      font: 700 1.25rem/1.35 'Poppins', sans-serif;
+    }
+
+    .project-copy p {
+      margin: 0;
+      color: #5b6b64;
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+
+    .project-note {
+      margin-top: 1.6rem;
+      color: #6a7a73;
+      font-size: 0.82rem;
+      text-align: center;
+    }
+
+    .project-steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .project-step {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+      padding: 1.25rem;
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .project-step-number {
+      display: grid;
+      width: 36px;
+      height: 36px;
+      flex: 0 0 36px;
+      place-items: center;
+      border-radius: 50%;
+      background: #ffa500;
+      color: #fff;
+      font: 800 0.95rem 'Poppins', sans-serif;
+    }
+
+    .project-step h3 {
+      margin: 0 0 0.25rem;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .project-step p {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+
+    .projects-cta {
+      background:
+        radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.2), transparent 28%),
+        linear-gradient(135deg, #062e23 0%, #064e3b 58%, #0b664f 100%);
+    }
+
+    @media (max-width: 680px) {
+      .projects-hero {
+        min-height: 590px;
+      }
+
+      .projects-hero .page-hero-content {
+        padding: 4.5rem 1.25rem 3.5rem;
+      }
+
+      .projects-hero .page-hero-overlay {
+        background: linear-gradient(90deg, rgba(4, 33, 26, 0.88), rgba(4, 33, 26, 0.56));
+      }
+
+      .project-grid,
+      .project-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .project-copy {
+        padding: 1.2rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .project-card,
+      .project-image,
+      .project-filter {
+        transition: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="SK Solar Bikaner home">
+        <div class="logo-img-wrap"><img src="LOGO.png" alt="SK Solar Bikaner" /></div>
+      </a>
+      <div class="nav-links" aria-label="मुख्य नेविगेशन">
+        <a href="index.html">होम</a>
+        <a href="about.html">हमारे बारे में</a>
+        <a href="services.html">सेवाएं</a>
+        <a href="projects.html" class="active" aria-current="page">प्रोजेक्ट्स</a>
+        <a href="calculator.html">कैलकुलेटर</a>
+        <a href="contact.html" class="nav-cta">संपर्क करें</a>
+      </div>
+      <button class="hamburger projects-menu-button" id="hamburger" type="button" aria-label="मेन्यू खोलें" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">होम</a>
+      <a href="about.html">हमारे बारे में</a>
+      <a href="services.html">सेवाएं</a>
+      <a href="projects.html" aria-current="page">प्रोजेक्ट्स</a>
+      <a href="calculator.html">कैलकुलेटर</a>
+      <a href="contact.html">संपर्क करें</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero projects-hero">
+      <img class="page-hero-bg" src="assets/images/solar-rooftop.jpg" alt="घर की छत पर लगे solar panels" fetchpriority="high" />
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="page-hero-tag"><i class="fa-solid fa-sun" aria-hidden="true"></i> हमारे प्रोजेक्ट्स</div>
+        <h1>धूप से बने <span>बेहतर कल</span></h1>
+        <p>हमारे rooftop solar और elevated solar setup की झलक देखें। आपके घर या business के लिए भी सही solution हमसे चुनें।</p>
+        <div class="projects-hero-actions">
+          <a href="#project-gallery" class="btn-primary"><i class="fa-solid fa-images" aria-hidden="true"></i> प्रोजेक्ट्स देखें</a>
+          <a href="contact.html" class="btn-outline"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Free Site Survey</a>
+        </div>
+        <div class="breadcrumb">
+          <a href="index.html">होम</a><i class="fa-solid fa-chevron-right" aria-hidden="true"></i><span>प्रोजेक्ट्स</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar" aria-label="SK Solar की सुविधाएं">
+      <div class="trust-track">
+        <span class="trust-item"><i class="fa-solid fa-house-solar" aria-hidden="true"></i> Rooftop Solar</span>
+        <span class="trust-item"><i class="fa-solid fa-solar-panel" aria-hidden="true"></i> Elevated Structures</span>
+        <span class="trust-item"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Free Site Survey</span>
+        <span class="trust-item"><i class="fa-solid fa-sun" aria-hidden="true"></i> Clean Energy</span>
+        <span class="trust-item"><i class="fa-solid fa-house-solar" aria-hidden="true"></i> Rooftop Solar</span>
+        <span class="trust-item"><i class="fa-solid fa-solar-panel" aria-hidden="true"></i> Elevated Structures</span>
+        <span class="trust-item"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Free Site Survey</span>
+        <span class="trust-item"><i class="fa-solid fa-sun" aria-hidden="true"></i> Clean Energy</span>
+      </div>
+    </div>
+
+    <section class="section project-intro" id="project-gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">सोलर इंस्टॉलेशन की झलक</span>
+          <h2 class="section-title">हर छत के लिए, सोच-समझकर बनाया गया setup</h2>
+          <p class="section-desc">छत की जगह और जरूरत के अनुसार solar system का design बदलता है। नीचे दिए गए examples में rooftop और elevated structure के विकल्प देखें।</p>
+        </div>
+
+        <div class="project-filters" role="group" aria-label="प्रोजेक्ट्स फ़िल्टर करें">
+          <button class="project-filter" type="button" data-filter="all" aria-pressed="true">सभी प्रोजेक्ट्स</button>
+          <button class="project-filter" type="button" data-filter="rooftop" aria-pressed="false">Rooftop Solar</button>
+          <button class="project-filter" type="button" data-filter="elevated" aria-pressed="false">Elevated Structure</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-category="rooftop">
+            <div class="project-image-wrap">
+              <img class="project-image" src="assets/images/solar-rooftop.jpg" alt="Residential rooftop solar panels" loading="lazy" />
+              <span class="project-type"><i class="fa-solid fa-house" aria-hidden="true"></i> Rooftop Solar</span>
+            </div>
+            <div class="project-copy">
+              <span class="project-location">घर के लिए सोलर</span>
+              <h2>छत पर Solar Panel Installation</h2>
+              <p>छत की उपलब्ध जगह के अनुसार panels का साफ-सुथरा layout, जिससे घर के लिए solar energy का बेहतर उपयोग हो।</p>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="elevated">
+            <div class="project-image-wrap">
+              <img class="project-image" src="assets/images/roof-solar-3.jpg" alt="घर के outdoor area पर elevated solar canopy" loading="lazy" />
+              <span class="project-type"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Elevated Structure</span>
+            </div>
+            <div class="project-copy">
+              <span class="project-location">ऊंची structure पर सोलर</span>
+              <h2>Solar Canopy & Elevated Setup</h2>
+              <p>ऊंची structure पर panels लगाकर नीचे की जगह को खुला और उपयोगी बनाए रखने का एक smart विकल्प।</p>
+            </div>
+          </article>
+        </div>
+        <p class="project-note">हर installation का design site survey और आपकी जरूरत के अनुसार तय किया जाता है।</p>
+      </div>
+    </section>
+
+    <section class="section-photo-bg">
+      <img class="pbg-img" src="assets/images/roof-solar-3.jpg" alt="" loading="lazy" />
+      <div class="pbg-overlay"></div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">शुरुआत आसान है</span>
+          <h2 class="section-title">आपके Solar Project के 3 आसान कदम</h2>
+          <p class="section-desc">पहली बातचीत से installation planning तक—हम हर चरण में आपका मार्गदर्शन करते हैं।</p>
+        </div>
+        <div class="project-steps">
+          <div class="project-step">
+            <span class="project-step-number">1</span>
+            <div><h3>अपनी जरूरत बताएं</h3><p>बिजली का bill और जगह की जानकारी साझा करें।</p></div>
+          </div>
+          <div class="project-step">
+            <span class="project-step-number">2</span>
+            <div><h3>Site survey कराएं</h3><p>छत और धूप की स्थिति देखकर options समझें।</p></div>
+          </div>
+          <div class="project-step">
+            <span class="project-step-number">3</span>
+            <div><h3>सही setup चुनें</h3><p>अपने घर या business के लिए अगला कदम तय करें।</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section projects-cta">
+      <div class="container">
+        <h2>आपकी छत पर भी Solar लग सकता है!</h2>
+        <p>SK Solar Bikaner से बात करें—हम आपकी जरूरत के हिसाब से site survey और सही system के बारे में बताएंगे।</p>
+        <div class="cta-btns">
+          <a href="contact.html" class="btn-cta-white"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Free Site Survey बुक करें</a>
+          <a href="tel:+919001319866" class="btn-cta-dark"><i class="fa-solid fa-phone" aria-hidden="true"></i> 090013 19866</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="margin-bottom:1.2rem;"><div class="logo-img-wrap" style="display:inline-flex;"><img src="LOGO.png" alt="SK Solar Bikaner" /></div></div>
+          <p style="font-size:0.9rem;line-height:1.7;">Bikaner में आपका solar partner। Rooftop solar, site survey और installation guidance के लिए हमसे संपर्क करें।</p>
+          <div class="footer-social">
+            <a href="https://wa.me/919001319866" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel:+919001319866" aria-label="कॉल करें"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto:sksolar.bikaner@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">होम</a></li>
+            <li><a href="about.html">हमारे बारे में</a></li>
+            <li><a href="services.html">सेवाएं</a></li>
+            <li><a href="projects.html">प्रोजेक्ट्स</a></li>
+            <li><a href="calculator.html">कैलकुलेटर</a></li>
+            <li><a href="contact.html">संपर्क करें</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>सेवाएं</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Residential Solar</a></li>
+            <li><a href="services.html">Commercial Solar</a></li>
+            <li><a href="services.html">Agricultural Solar</a></li>
+            <li><a href="services.html">Net Metering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>संपर्क</h4>
+          <div class="footer-contact-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner — 334001</span></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+919001319866" style="color:inherit;text-decoration:none;">+91 90013 19866</a></div>
+          <div class="footer-contact-item"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><a href="https://wa.me/919001319866" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">WhatsApp Chat</a></div>
+          <div class="footer-contact-item"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Mon–Sat: 9AM – 7PM</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 SK Solar Bikaner. सर्वाधिकार सुरक्षित।</span>
+        <span>Bikaner, Rajasthan | Clean Solar Energy</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919001319866?text=नमस्ते! मुझे SK Solar Bikaner से solar installation के बारे में जानकारी चाहिए।"
+    class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp पर SK Solar से बात करें">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script>
+    const menuButton = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      menuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    const filterButtons = document.querySelectorAll('.project-filter');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        filterButtons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+        projectCards.forEach((card) => {
+          card.hidden = filter !== 'all' && card.dataset.category !== filter;
+        });
+      });
+    });
+  </script>
+</body>
+</html>

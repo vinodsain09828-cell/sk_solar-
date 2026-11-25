@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Solar Bikaner – सोलर पैनल इंस्टॉलेशन | PM Surya Ghar Subsidy</title>
+  <meta name="description"
+    content="SK Solar Bikaner – राजस्थान में सर्वश्रेष्ठ सोलर पैनल इंस्टॉलेशन। PM Surya Ghar योजना में ₹78,000 तक सब्सिडी। Residential, Commercial & Agricultural Solar." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/styles.css" />
+
+  <style>
+    /* ===================== HERO ===================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: #0b4b3b;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      opacity: 0.48;
+      z-index: 0;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(6, 46, 35, 0.72) 0%, rgba(6, 78, 59, 0.62) 60%, rgba(255, 165, 0, 0.08) 100%);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 165, 0, 0.18);
+      border: 1px solid rgba(255, 165, 0, 0.5);
+      color: #ffa500;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.4rem 1.2rem;
+      border-radius: 999px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero .hero-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title span {
+      color: #ffa500;
+    }
+
+    .hero-title .hero-sun-line {
+      display: block;
+      width: 100%;
+      color: #fff;
+      margin-left: -0.6em;
+      transform: translateY(0.02em);
+      margin-bottom: 0.02em;
+    }
+
+    .hero-title .hero-sun-line .hero-sun-highlight {
+      color: #ffa500;
+    }
+
+    .icon {
+      width: 1em;
+      height: 1em;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vertical-align: -0.125em;
+      flex: 0 0 auto;
+    }
+
+    .hero-title .hero-action {
+      display: inline;
+    }
+
+    .hero-title .hero-suffix {
+      display: inline;
+      color: #fff;
+      margin-left: 0.12em;
+      white-space: nowrap;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: rgba(255, 255, 255, 0.88);
+      margin-bottom: 1.8rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    .hero-rating {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 999px;
+      padding: 0.35rem 1rem;
+      margin-bottom: 2rem;
+      color: #fff;
+      font-size: 0.95rem;
+    }
+
+    .hero-rating .stars {
+      color: #ffa500;
+    }
+
+    .hero-rating .stars .icon,
+    .review-stars .icon {
+      fill: currentColor;
+    }
+
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+
+    .btn-hero-primary {
+      background: linear-gradient(135deg, #ffa500, #ff6b00);
+      color: #fff;
+      padding: 0.95rem 2.4rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 8px 32px rgba(255, 165, 0, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-hero-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 40px rgba(255, 165, 0, 0.5);
+    }
+
+    .btn-hero-secondary {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      padding: 0.95rem 2.4rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(8px);
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-hero-secondary:hover {
+      background: rgba(255, 255, 255, 0.22);
+      transform: translateY(-3px);
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+
+    .hero-stat {
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-stat .num {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #ffa500;
+      display: block;
+      line-height: 1;
+    }
+
+    .hero-stat .lbl {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.7);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .hero-stat-divider {
+      width: 1px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.2);
+      align-self: center;
+    }
+
+    /* ===================== MARQUEE TRUST BAR ===================== */
+    .trust-bar {
+      background: linear-gradient(90deg, #064e3b, #065f46, #064e3b);
+      padding: 0.85rem 0;
+      overflow: hidden;
+      border-top: 2px solid rgba(255, 165, 0, 0.3);
+      border-bottom: 2px solid rgba(255, 165, 0, 0.3);
+    }
+
+    .trust-track {
+      display: flex;
+      gap: 3rem;
+      animation: marquee 20s linear infinite;
+      white-space: nowrap;
+    }
+
+    .trust-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    .trust-item .icon {
+      color: #ffa500;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    /* ===================== SECTION GENERIC ===================== */
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-alt {
+      background: #f8faf9;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(6, 78, 59, 0.1);
+      color: #064e3b;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.35rem 1rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.8rem;
+    }
+
+    .section-title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      color: #062e23;
+      line-height: 1.2;
+      margin-bottom: 0.8rem;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* ===================== PHOTO GRID ===================== */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 1rem;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .photo-grid-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .photo-grid-item.big {
+      grid-row: span 2;
+    }
+
+    .photo-grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+      min-height: 180px;
+    }
+
+    .photo-grid-item.big img {
+      min-height: 400px;
+    }
+
+    .photo-grid-item:hover img {
+      transform: scale(1.06);
+    }
+
+    .photo-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(6, 46, 35, 0.85), transparent);
+      color: #fff;
+      padding: 1rem 0.8rem 0.6rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    @media (max-width: 700px) {
+      .photo-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .photo-grid-item.big {
+        grid-row: auto;
+      }
+    }
+
+    /* ===================== SERVICES CARDS ===================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.8rem;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2rem 1.6rem;
+      box-shadow: 0 4px 24px rgba(6, 46, 35, 0.07);
+      border: 1px solid rgba(6, 78, 59, 0.09);
+      transition: transform 0.25s, box-shadow 0.25s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 48px rgba(6, 46, 35, 0.14);
+    }
+
+    .service-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #064e3b, #065f46);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      color: #ffa500;
+      margin-bottom: 1.2rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #062e23;
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .service-link {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #064e3b;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .service-link .icon {
+      transition: transform 0.2s;
+    }
+
+    .service-card:hover .service-link .icon {
+      transform: translateX(4px);
+    }
+
+    /* ===================== SUBSIDY BANNER ===================== */
+    .subsidy-banner {
+      background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%);
+      border-radius: 24px;
+      padding: 3.5rem 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .subsidy-banner::before {
+      content: '';
+      position: absolute;
+      right: -20px;
+      top: -30px;
+      width: 180px;
+      height: 180px;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='4'/%3E%3Cpath d='M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42'/%3E%3C/svg%3E") center / contain no-repeat;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+
+    .subsidy-banner h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 0.6rem;
+    }
+
+    .subsidy-banner h2 span {
+      color: #ffa500;
+    }
+
+    .subsidy-banner p {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .subsidy-slabs {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.8rem;
+    }
+
+    .slab {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 12px;
+      padding: 0.6rem 1rem;
+      text-align: center;
+      color: #fff;
+      min-width: 110px;
+    }
+
+    .slab .slab-kw {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 600;
+    }
+
+    .slab .slab-amt {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #ffa500;
+    }
+
+    .subsidy-banner-img {
+      width: 240px;
+      border-radius: 16px;
+      object-fit: cover;
+      height: 200px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 768px) {
+      .subsidy-banner {
+        grid-template-columns: 1fr;
+      }
+
+      .subsidy-banner-img {
+        width: 100%;
+        height: 180px;
+      }
+    }
+
+    /* ===================== WHY US ===================== */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .why-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.8rem 1.4rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(6, 46, 35, 0.07);
+      border: 1px solid rgba(6, 78, 59, 0.08);
+    }
+
+    .why-icon {
+      font-size: 2.2rem;
+      color: #064e3b;
+      margin-bottom: 1rem;
+    }
+
+    .why-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #062e23;
+      margin-bottom: 0.4rem;
+    }
+
+    .why-card p {
+      font-size: 0.88rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* ===================== REVIEWS ===================== */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.6rem;
+    }
+
+    .review-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.8rem;
+      box-shadow: 0 4px 24px rgba(6, 46, 35, 0.07);
+      border: 1px solid rgba(6, 78, 59, 0.08);
+      position: relative;
+    }
+
+    .review-card::before {
+      content: '"';
+      position: absolute;
+      top: 1rem;
+      right: 1.4rem;
+      font-size: 5rem;
+      color: #064e3b;
+      opacity: 0.08;
+      font-family: Georgia, serif;
+      line-height: 1;
+    }
+
+    .review-stars {
+      color: #ffa500;
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .review-text {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+      font-style: italic;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .review-avatar {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, #064e3b, #ffa500);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .review-name {
+      font-weight: 700;
+      color: #062e23;
+      font-size: 0.95rem;
+    }
+
+    .review-loc {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    /* ===================== CTA SECTION ===================== */
+    .cta-section {
+      background:
+        radial-gradient(circle at 85% 20%, rgba(16, 185, 129, 0.28), transparent 28%),
+        linear-gradient(135deg, #062e23 0%, #064e3b 58%, #0b664f 100%);
+      padding: 5rem 0;
+      text-align: center;
+    }
+
+    .cta-section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(1.8rem, 5vw, 3rem);
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .cta-section p {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .btn-cta-white {
+      background: #fff;
+      color: #064e3b;
+      padding: 0.95rem 2.4rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      transition: transform 0.2s;
+    }
+
+    .btn-cta-white:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-cta-dark {
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      padding: 0.95rem 2.4rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      border: 2px solid rgba(255, 255, 255, 0.38);
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .btn-cta-dark:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-3px);
+    }
+
+    /* ===================== ABOUT TEASER RESPONSIVE ===================== */
+    @media (max-width: 860px) {
+      .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+
+      .about-grid>div:last-child img {
+        height: 260px !important;
+      }
+    }
+
+    /* ===================== FOOTER ===================== */
+    .footer {
+      background: #04211a;
+      color: rgba(255, 255, 255, 0.75);
+      padding: 4rem 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 900px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 540px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .footer-brand .logo-wrap {
+      margin-bottom: 1.2rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .footer-brand .logo-wrap img {
+      width: 140px;
+      height: auto;
+      max-height: 94px;
+      object-fit: contain;
+    }
+
+    .footer-brand p {
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .footer-social a {
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .footer-social a:hover {
+      background: #ffa500;
+      color: #fff;
+    }
+
+    .footer h4 {
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.65);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: #ffa500;
+    }
+
+    .footer-contact-item {
+      display: flex;
+      gap: 0.7rem;
+      align-items: flex-start;
+      margin-bottom: 0.9rem;
+      font-size: 0.88rem;
+    }
+
+    .footer-contact-item .icon {
+      color: #ffa500;
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+    }
+
+    /* ===================== NAV (top bar) ===================== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(6, 46, 35, 0.1);
+      box-shadow: 0 4px 18px rgba(6, 46, 35, 0.08);
+      transition: background 0.3s;
+    }
+
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      height: 68px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-decoration: none;
+      color: #233b32;
+    }
+
+    .nav-logo img {
+      width: 104px;
+      height: auto;
+      max-height: 68px;
+      object-fit: contain;
+    }
+
+    .nav-logo .logo-text {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.3rem;
+    }
+
+    .nav-logo .logo-sub {
+      font-size: 0.65rem;
+      color: #ffa500;
+      letter-spacing: 0.08em;
+      display: block;
+      line-height: 1;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .nav-links a {
+      color: #233b32;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 8px;
+      transition: color 0.2s, background 0.2s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ffa500;
+      background: rgba(255, 165, 0, 0.1);
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, #ffa500, #ff6b00);
+      color: #fff !important;
+      padding: 0.55rem 1.3rem !important;
+      border-radius: 999px !important;
+      font-weight: 700 !important;
+    }
+
+    .nav-cta:hover {
+      opacity: 0.9;
+      transform: none;
+      background: linear-gradient(135deg, #ff8c00, #e55a00) !important;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #233b32;
+      border-radius: 2px;
+      transition: all 0.3s;
+    }
+
+    .mobile-menu {
+      display: none;
+      background: rgba(255, 255, 255, 0.98);
+      padding: 1rem 1.5rem 1.5rem;
+    }
+
+    .mobile-menu.open {
+      display: block;
+    }
+
+    .mobile-menu a {
+      display: block;
+      color: #233b32;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.7rem 0;
+      border-bottom: 1px solid rgba(6, 46, 35, 0.1);
+      font-size: 1rem;
+    }
+
+    .mobile-menu a:last-child {
+      border: none;
+    }
+
+    @media (max-width: 860px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hamburger {
+        display: flex;
+      }
+    }
+
+    /* ===================== FLOATING WHATSAPP ===================== */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      width: 56px;
+      height: 56px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+      animation: pulse-wa 2s infinite;
+    }
+
+    .wa-float .fab {
+      font-size: 1.7rem;
+    }
+
+    @keyframes pulse-wa {
+
+      0%,
+      100% {
+        box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 6px 40px rgba(37, 211, 102, 0.7);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="icon-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 10-13h-7z"/></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9" r="1.5"/><path d="m21 15-5-5L5 20"/></symbol>
+    <symbol id="icon-calculator" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8v4H8zm0 8h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.3 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4 12.8 12.8 0 0 0 2.8.7 2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="icon-certificate" viewBox="0 0 24 24"><circle cx="12" cy="9" r="7"/><path d="m8 15-1 7 5-3 5 3-1-7m-6-9 1 2 2 .3-1.5 1.5.4 2.2L12 11l-2 1 .4-2.2L9 8.3l2-.3z"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+    <symbol id="icon-tools" viewBox="0 0 24 24"><path d="M14.7 6.3a5 5 0 0 0-6.4 6.4L3 18a2.1 2.1 0 0 0 3 3l5.3-5.3a5 5 0 0 0 6.4-6.4L14 13l-3-3z"/></symbol>
+    <symbol id="icon-coins" viewBox="0 0 24 24"><ellipse cx="9" cy="6" rx="6" ry="3"/><path d="M3 6v5c0 1.7 2.7 3 6 3s6-1.3 6-3V6M3 11v5c0 1.7 2.7 3 6 3 1.1 0 2.1-.1 3-.4"/><path d="M15 14c3 0 6 1.3 6 3s-3 3-6 3-6-1.3-6-3 3-3 6-3zm6 3v3"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-7-7 7 7-7 7"/></symbol>
+    <symbol id="icon-seedling" viewBox="0 0 24 24"><path d="M12 22v-9m0 3c-6 0-9-3-9-9 6 0 9 3 9 9zm0-4c0-6 3-9 9-9 0 6-3 9-9 9z"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2m7-10a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm13 10v-2a4 4 0 0 0-3-3.9m-2-12a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="icon-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V5l7-3 7 3v16M9 9h.01M15 9h.01M9 13h.01M15 13h.01M10 21v-4h4v4"/></symbol>
+    <symbol id="icon-industry" viewBox="0 0 24 24"><path d="M3 21V9l6 4V9l6 4V5h6v16zM17 8h.01M7 17h.01M12 17h.01M17 17h.01"/></symbol>
+    <symbol id="icon-battery" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V4h10v3m-6 3-2 4h3l-1 3 4-5h-3l1-2"/></symbol>
+    <symbol id="icon-network" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="19" cy="19" r="2"/><path d="m11 7-5 10m7-10 5 10M7 19h10"/></symbol>
+    <symbol id="icon-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a5 5 0 0 0-6.4 6.4L3 18a2.1 2.1 0 0 0 3 3l5.3-5.3a5 5 0 0 0 6.4-6.4L14 13l-3-3z"/></symbol>
+    <symbol id="icon-landmark" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7M4 10h16M5 10v9m5-9v9m4-9v9m5-9v9M3 22h18M2 19h20"/></symbol>
+    <symbol id="icon-medal" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="m8.2 13-1.2 9 5-3 5 3-1.2-9m-3.8-8 1.2 2.4 2.7.4-2 1.9.5 2.7L12 11l-2.4 1.4.5-2.7-2-1.9 2.7-.4z"/></symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4V2h6v2m-6 6h6m-6 4h6m-6 4h4"/></symbol>
+    <symbol id="icon-money" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 9h.01M18 15h.01"/></symbol>
+    <symbol id="icon-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="icon-envelope" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.7A8.5 8.5 0 1 1 20.5 11.5z"/><path d="M8.5 8.5c.3 2.8 2.2 4.7 5 5l1-1 2 1c-.2 1.5-1.1 2.2-2.7 2-3.3-.5-6.2-3.4-6.7-6.7-.2-1.6.5-2.5 2-2.7l1 2z"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20 4c-9 0-15 3-15 10a6 6 0 0 0 6 6c7 0 10-6 9-16zM4 21l9-9"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+  </svg>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="LOGO.png" alt="SK Solar Bikaner" />
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">होम</a>
+        <a href="about.html">हमारे बारे में</a>
+        <a href="services.html">सेवाएं</a>
+        <a href="projects.html">प्रोजेक्ट्स</a>
+        <a href="calculator.html">कैलकुलेटर</a>
+        <a href="contact.html" class="nav-cta">संपर्क करें</a>
+      </div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg> होम</a>
+      <a href="about.html"><svg class="icon" aria-hidden="true"><use href="#icon-info"></use></svg> हमारे बारे में</a>
+      <a href="services.html"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg> सेवाएं</a>
+      <a href="projects.html"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg> प्रोजेक्ट्स</a>
+      <a href="calculator.html"><svg class="icon" aria-hidden="true"><use href="#icon-calculator"></use></svg> कैलकुलेटर</a>
+      <a href="contact.html"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> संपर्क करें</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <img class="hero-bg-img"
+      src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80&auto=format&fit=crop"
+      alt="Solar panels on rooftop" loading="eager" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg> Bikaner's #1 Solar Company</div>
+      <h1 class="hero-title">
+        <span class="hero-sun-line">सूरज की <span class="hero-sun-highlight">रोशनी से</span></span>
+        <span class="hero-action">बिजली बनाइए</span><span class="hero-suffix">, पैसे बचाइए</span>
+      </h1>
+      <p class="hero-subtitle">
+        SK Solar Bikaner — राजस्थान में सर्वश्रेष्ठ सोलर पैनल इंस्टॉलेशन।<br />
+        PM Surya Ghar योजना में ₹78,000 तक की सरकारी सब्सिडी पाएं।
+      </p>
+      <div class="hero-rating">
+        <span class="stars" aria-label="5 stars"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></span>
+        <strong>4.8/5</strong>
+        <span style="color:rgba(255,255,255,0.6)">JustDial Verified</span>
+      </div>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn-hero-primary">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> अभी फ्री कोटेशन लें
+        </a>
+        <a href="calculator.html" class="btn-hero-secondary">
+          <svg class="icon" aria-hidden="true"><use href="#icon-calculator"></use></svg> सब्सिडी कैलकुलेट करें
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="num">500+</span>
+          <span class="lbl">इंस्टॉलेशन</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="num">₹78K</span>
+          <span class="lbl">तक सब्सिडी</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="num">25+</span>
+          <span class="lbl">वर्ष वारंटी</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="num">4.8 <svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></span>
+          <span class="lbl">रेटिंग</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST BAR ============ -->
+  <div class="trust-bar">
+    <div class="trust-track">
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-certificate"></use></svg> MNRE Certified Installer</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg> 25 Year Panel Warranty</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg> PM Surya Ghar Approved Vendor</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg> 4.8 JustDial Rating</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-tools"></use></svg> Free Site Survey</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-coins"></use></svg> EMI Available</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-certificate"></use></svg> MNRE Certified Installer</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg> 25 Year Panel Warranty</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg> PM Surya Ghar Approved Vendor</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg> 4.8 JustDial Rating</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-tools"></use></svg> Free Site Survey</span>
+      <span class="trust-item"><svg class="icon" aria-hidden="true"><use href="#icon-coins"></use></svg> EMI Available</span>
+    </div>
+  </div>
+
+  <!-- ============ PHOTO SHOWCASE ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><svg class="icon" aria-hidden="true"><use href="#icon-image"></use></svg> हमारे काम की झलक</span>
+        <h2 class="section-title">बिकानेर में सोलर इंस्टॉलेशन</h2>
+        <p class="section-desc">घर, दुकान, खेत — हर जगह सोलर। देखिए हमारे बेहतरीन प्रोजेक्ट्स।</p>
+      </div>
+      <div class="photo-grid">
+        <div class="photo-grid-item big">
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80&auto=format&fit=crop"
+            alt="Rooftop solar installation Bikaner" loading="lazy" />
+          <div class="photo-label"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg> Residential Rooftop Solar</div>
+        </div>
+        <div class="photo-grid-item">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop"
+            alt="Solar panels home" loading="lazy" />
+          <div class="photo-label"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg> 5kW Home System</div>
+        </div>
+        <div class="photo-grid-item">
+          <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&q=80&auto=format&fit=crop"
+            alt="Solar field agricultural" loading="lazy" />
+          <div class="photo-label"><svg class="icon" aria-hidden="true"><use href="#icon-seedling"></use></svg> Agricultural Solar</div>
+        </div>
+        <div class="photo-grid-item">
+          <img src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?w=600&q=80&auto=format&fit=crop"
+            alt="Solar installation team" loading="lazy" />
+          <div class="photo-label"><svg class="icon" aria-hidden="true"><use href="#icon-users"></use></svg> Expert Installation Team</div>
+        </div>
+        <div class="photo-grid-item">
+          <img src="https://images.unsplash.com/photo-1584704135557-d0bf8b282c14?w=600&q=80&auto=format&fit=crop"
+            alt="Commercial solar system" loading="lazy" />
+          <div class="photo-label"><svg class="icon" aria-hidden="true"><use href="#icon-building"></use></svg> Commercial Installation</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2rem;">
+        <a href="projects.html"
+          style="display:inline-flex;align-items:center;gap:0.5rem;background:#064e3b;color:#fff;padding:0.85rem 2rem;border-radius:999px;text-decoration:none;font-weight:600;font-size:0.95rem;">
+          सभी प्रोजेक्ट्स देखें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg> हमारी सेवाएं</span>
+        <h2 class="section-title">हर जरूरत के लिए सोलर सॉल्यूशन</h2>
+        <p class="section-desc">घर से लेकर खेत तक — SK Solar के पास हर सोलर जरूरत का समाधान है।</p>
+      </div>
+      <div class="services-grid">
+        <a href="services.html" class="service-card">
+          <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-home"></use></svg></div>
+          <h3>Residential Solar</h3>
+          <p>घर की छत पर सोलर पैनल लगाएं। बिजली बिल ₹0 करें और सरकार से ₹78,000 तक सब्सिडी पाएं।</p>
+          <span class="service-link">और जानें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
+        </a>
+        <a href="services.html" class="service-card">
+          <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-industry"></use></svg></div>
+          <h3>Commercial Solar</h3>
+          <p>दुकान, फैक्ट्री, स्कूल के लिए बड़े सोलर सिस्टम। बिजली लागत 70% तक कम करें।</p>
+          <span class="service-link">और जानें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
+        </a>
+        <a href="services.html" class="service-card">
+          <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-seedling"></use></svg></div>
+          <h3>Agricultural Solar</h3>
+          <p>खेत में सोलर पंप और सोलर सिस्टम। सिंचाई का खर्च पूरी तरह खत्म करें।</p>
+          <span class="service-link">और जानें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
+        </a>
+        <a href="services.html" class="service-card">
+          <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-battery"></use></svg></div>
+          <h3>Hybrid Solar System</h3>
+          <p>Battery backup के साथ 24/7 बिजली। लोडशेडिंग की कोई टेंशन नहीं।</p>
+          <span class="service-link">और जानें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
+        </a>
+        <a href="services.html" class="service-card">
+          <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-network"></use></svg></div>
+          <h3>Net Metering</h3>
+          <p>अतिरिक्त बिजली सरकार को बेचें और पैसे कमाएं। Net Metering की पूरी सुविधा।</p>
+          <span class="service-link">और जानें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
+        </a>
+        <a href="services.html" class="service-card">
+          <div class="service-icon"><svg class="icon" aria-hidden="true"><use href="#icon-wrench"></use></svg></div>
+          <h3>AMC & Maintenance</h3>
+          <p>सोलर सिस्टम की सर्विसिंग और AMC। पैनल की सफाई से लेकर inverter चेकअप तक।</p>
+          <span class="service-link">और जानें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUBSIDY BANNER ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="subsidy-banner">
+        <div>
+          <span class="section-tag" style="background:rgba(255,165,0,0.15);color:#ffa500;"><svg class="icon" aria-hidden="true"><use href="#icon-landmark"></use></svg> सरकारी सब्सिडी</span>
+          <h2>PM Surya Ghar योजना में<br /><span>₹78,000 तक की सब्सिडी</span> पाएं!</h2>
+          <p>केंद्र सरकार की PM Surya Ghar Muft Bijli Yojana के तहत 1 करोड़ घरों को मुफ्त बिजली। SK Solar Bikaner आपकी
+            पूरी subsidy process मुफ्त में handle करेगा।</p>
+          <div class="subsidy-slabs">
+            <div class="slab">
+              <div class="slab-kw">1 kW</div>
+              <div class="slab-amt">₹33,000</div>
+            </div>
+            <div class="slab">
+              <div class="slab-kw">2 kW</div>
+              <div class="slab-amt">₹66,000</div>
+            </div>
+            <div class="slab">
+              <div class="slab-kw">3 kW+</div>
+              <div class="slab-amt">₹78,000</div>
+            </div>
+          </div>
+          <a href="calculator.html"
+            style="display:inline-flex;align-items:center;gap:0.5rem;background:linear-gradient(135deg,#ffa500,#ff6b00);color:#fff;padding:0.9rem 2rem;border-radius:999px;text-decoration:none;font-weight:700;">
+            <svg class="icon" aria-hidden="true"><use href="#icon-calculator"></use></svg> अपनी सब्सिडी कैलकुलेट करें
+          </a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=500&q=80&auto=format&fit=crop"
+          alt="Solar subsidy" class="subsidy-banner-img" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY US ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><svg class="icon" aria-hidden="true"><use href="#icon-medal"></use></svg> हमें क्यों चुनें?</span>
+        <h2 class="section-title">SK Solar क्यों है Bikaner का #1 Choice?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#icon-medal"></use></svg></div>
+          <h4>MNRE Certified</h4>
+          <p>हम सरकार द्वारा मान्यता प्राप्त सोलर इंस्टॉलर हैं। हर काम certificate के साथ।</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#icon-bolt"></use></svg></div>
+          <h4>तेज़ इंस्टॉलेशन</h4>
+          <p>Survey के 7 दिन के अंदर आपका सोलर सिस्टम तैयार। कोई देरी नहीं।</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#icon-shield"></use></svg></div>
+          <h4>25 साल की वारंटी</h4>
+          <p>सोलर पैनल पर 25 साल की performance warranty। निवेश पूरी तरह सुरक्षित।</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#icon-clipboard"></use></svg></div>
+          <h4>Subsidy Paperwork Free</h4>
+          <p>PM Surya Ghar की सारी paperwork हम करेंगे — आपको कहीं जाने की जरूरत नहीं।</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#icon-money"></use></svg></div>
+          <h4>EMI उपलब्ध</h4>
+          <p>0% interest EMI पर सोलर लगाएं। आज से ही बिजली बिल बचत शुरू।</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#icon-tools"></use></svg></div>
+          <h4>24/7 After-Sales</h4>
+          <p>इंस्टॉलेशन के बाद भी हम आपके साथ हैं। कोई भी problem — तुरंत solution।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg> ग्राहकों की राय</span>
+        <h2 class="section-title">हमारे खुश ग्राहक क्या कहते हैं</h2>
+        <p class="section-desc">JustDial पर 4.8 <svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg> रेटिंग — बिकानेर के सैकड़ों परिवारों का भरोसा।</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars" aria-label="5 stars"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></div>
+          <p class="review-text">"SK Solar ने हमारे घर पर 3kW का सिस्टम लगाया। अब बिजली बिल ₹0 आता है और सरकार से
+            ₹78,000 की subsidy भी मिली। बहुत बढ़िया टीम!"</p>
+          <div class="review-author">
+            <div class="review-avatar">R</div>
+            <div>
+              <div class="review-name">रामचंद्र जी</div>
+              <div class="review-loc"><svg class="icon" aria-hidden="true" style="color:#ffa500;font-size:0.75rem"><use href="#icon-map-pin"></use></svg>
+                Indira Colony, Bikaner</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars" aria-label="5 stars"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></div>
+          <p class="review-text">"हमारी दुकान के लिए 5kW का commercial system लगवाया। बिजली बिल 65% कम हो गया। SK Solar
+            की team बहुत professional है।"</p>
+          <div class="review-author">
+            <div class="review-avatar">S</div>
+            <div>
+              <div class="review-name">सुरेश व्यापारी</div>
+              <div class="review-loc"><svg class="icon" aria-hidden="true" style="color:#ffa500;font-size:0.75rem"><use href="#icon-map-pin"></use></svg>
+                Station Road, Bikaner</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars" aria-label="5 stars"><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg><svg class="icon" aria-hidden="true"><use href="#icon-star"></use></svg></div>
+          <p class="review-text">"खेत के लिए solar pump system लगवाया। अब सिंचाई का खर्च बिल्कुल नहीं आता। PM Surya Ghar
+            की subsidy process भी इन्होंने ही की।"</p>
+          <div class="review-author">
+            <div class="review-avatar">M</div>
+            <div>
+              <div class="review-name">मोहन लाल जी</div>
+              <div class="review-loc"><svg class="icon" aria-hidden="true" style="color:#ffa500;font-size:0.75rem"><use href="#icon-map-pin"></use></svg> नोखा
+                रोड, बीकानेर</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT TEASER ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div>
+          <span class="section-tag"><svg class="icon" aria-hidden="true"><use href="#icon-leaf"></use></svg> हमारे बारे में</span>
+          <h2 class="section-title" style="text-align:left;">बिकानेर का विश्वसनीय सोलर पार्टनर</h2>
+          <p style="color:#555;line-height:1.8;margin-bottom:1.5rem;">SK Solar Bikaner — राजस्थान के बिकानेर में स्थित
+            एक MNRE certified solar energy company है। हम 2015 से residential, commercial और agricultural solar systems
+            install कर रहे हैं।</p>
+          <ul style="list-style:none;padding:0;margin-bottom:2rem;">
+            <li style="display:flex;gap:0.7rem;margin-bottom:0.8rem;color:#333;font-size:0.95rem;"><span
+                style="color:#064e3b;font-weight:700;"><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg></span> 500+ successful installations in Bikaner</li>
+            <li style="display:flex;gap:0.7rem;margin-bottom:0.8rem;color:#333;font-size:0.95rem;"><span
+                style="color:#064e3b;font-weight:700;"><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg></span> MNRE Empanelled Solar Installer</li>
+            <li style="display:flex;gap:0.7rem;margin-bottom:0.8rem;color:#333;font-size:0.95rem;"><span
+                style="color:#064e3b;font-weight:700;"><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg></span> PM Surya Ghar Approved Vendor</li>
+            <li style="display:flex;gap:0.7rem;margin-bottom:0.8rem;color:#333;font-size:0.95rem;"><span
+                style="color:#064e3b;font-weight:700;"><svg class="icon" aria-hidden="true"><use href="#icon-check"></use></svg></span> Mon–Sat: 9 AM – 7 PM | Sunday: Closed</li>
+          </ul>
+          <a href="about.html"
+            style="display:inline-flex;align-items:center;gap:0.5rem;background:#064e3b;color:#fff;padding:0.85rem 2rem;border-radius:999px;text-decoration:none;font-weight:600;">
+            पूरी जानकारी देखें <svg class="icon" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </a>
+        </div>
+        <div style="position:relative;">
+          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=700&q=80&auto=format&fit=crop"
+            alt="SK Solar team Bikaner"
+            style="width:100%;border-radius:24px;object-fit:cover;height:380px;box-shadow:0 24px 64px rgba(6,46,35,0.18);"
+            loading="lazy" />
+          <div
+            style="position:absolute;bottom:-1.5rem;left:-1.5rem;background:linear-gradient(135deg,#064e3b,#065f46);color:#fff;border-radius:16px;padding:1.2rem 1.5rem;box-shadow:0 12px 32px rgba(6,46,35,0.2);">
+            <div style="font-size:1.8rem;font-weight:900;color:#ffa500;">500+</div>
+            <div style="font-size:0.8rem;opacity:0.85;">Successful Installations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>आज ही Free Consultation लें!</h2>
+      <p>हमारे सोलर experts आपके घर पर आकर free site survey करेंगे।<br />कोई charge नहीं, कोई commitment नहीं।</p>
+      <div class="cta-btns">
+        <a href="tel:+919001319866" class="btn-cta-white">
+          <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg> 090013 19866 पर कॉल करें
+        </a>
+        <a href="https://wa.me/919001319866?text=नमस्ते! मुझे SK Solar Bikaner से solar installation के बारे में जानकारी चाहिए।"
+          target="_blank" class="btn-cta-dark">
+          <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg> WhatsApp पर Message करें
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-wrap">
+            <img src="LOGO.png" alt="SK Solar Bikaner" />
+          </div>
+          <p>बिकानेर, राजस्थान में MNRE certified solar installer। PM Surya Ghar subsidy से लेकर installation तक — सब
+            कुछ हम करते हैं।</p>
+          <div class="footer-social">
+            <a href="https://wa.me/919001319866" target="_blank"><svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg></a>
+            <a href="tel:+919001319866"><svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg></a>
+            <a href="mailto:sksolar.bikaner@gmail.com"><svg class="icon" aria-hidden="true"><use href="#icon-envelope"></use></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">होम</a></li>
+            <li><a href="about.html">हमारे बारे में</a></li>
+            <li><a href="services.html">सेवाएं</a></li>
+            <li><a href="projects.html">प्रोजेक्ट्स</a></li>
+            <li><a href="calculator.html">सब्सिडी कैलकुलेटर</a></li>
+            <li><a href="contact.html">संपर्क करें</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>सेवाएं</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Residential Solar</a></li>
+            <li><a href="services.html">Commercial Solar</a></li>
+            <li><a href="services.html">Agricultural Solar</a></li>
+            <li><a href="services.html">Hybrid System</a></li>
+            <li><a href="services.html">Net Metering</a></li>
+            <li><a href="services.html">AMC & Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>संपर्क</h4>
+          <div class="footer-contact-item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-map-pin"></use></svg>
+            <span>B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner — 334001</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-phone"></use></svg>
+            <a href="tel:+919001319866" style="color:inherit;text-decoration:none;">+91 90013 19866</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-whatsapp"></use></svg>
+            <a href="https://wa.me/919001319866" target="_blank" style="color:inherit;text-decoration:none;">WhatsApp
+              Chat</a>
+          </div>
+          <div class="footer-contact-item">
+            <svg class="icon" aria-hidden="true"><use href="#icon-clock"></use></svg>
+            <span>Mon–Sat: 9AM–7PM</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 SK Solar Bikaner. All rights reserved.</span>
+        <span><svg class="icon" aria-hidden="true"><use href="#icon-sun"></use></svg> Powered by Solar Energy | Bikaner, Rajasthan</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/919001319866?text=नमस्ते! मुझे SK Solar Bikaner से solar installation के बारे में जानकारी चाहिए।"
+    class="wa-float" target="_blank" title="WhatsApp पर बात करें">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('mobileMenu').classList.toggle('open');
+    }
+    // Smooth navbar bg on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        nav.style.background = 'rgba(255,255,255,0.98)';
+      } else {
+        nav.style.background = 'rgba(255,255,255,0.97)';
+      }
+    });
+  </script>
+
+</body>
+
+</html>

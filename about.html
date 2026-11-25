@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>हमारे बारे में | SK Solar Bikaner</title>
+  <meta name="description" content="SK Solar Bikaner के बारे में जानें। MNRE certified, 500+ installations, PM Surya Ghar approved vendor।" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/shared.css" />
+  <style>
+    .about-cta {
+      background:
+        radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.22), transparent 28%),
+        linear-gradient(135deg, #062e23 0%, #064e3b 58%, #0b664f 100%);
+    }
+
+    .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; }
+    @media(max-width:768px){ .stats-grid { grid-template-columns: 1fr 1fr; } }
+    .stat-card { text-align: center; background: #fff; border-radius: 20px; padding: 2rem 1rem; box-shadow: 0 4px 24px rgba(6,46,35,0.07); border: 1px solid rgba(6,78,59,0.09); }
+    .stat-num { font-family: 'Poppins',sans-serif; font-size: 2.6rem; font-weight: 900; color: #ffa500; display: block; line-height: 1; }
+    .stat-label { font-size: 0.88rem; color: #666; font-weight: 600; margin-top: 0.5rem; display: block; }
+    .cert-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap: 1.4rem; }
+    .cert-card { background: #fff; border-radius: 16px; padding: 1.4rem 1.2rem; display: flex; align-items: center; gap: 1rem; box-shadow: 0 4px 20px rgba(6,46,35,0.07); border: 1px solid rgba(6,78,59,0.09); }
+    .cert-icon { font-size: 2rem; flex-shrink: 0; }
+    .cert-title { font-weight: 700; color: #062e23; font-size: 0.95rem; margin-bottom: 0.2rem; }
+    .cert-body { font-size: 0.82rem; color: #666; }
+    .story-img { width:100%; border-radius: 24px; height: 420px; object-fit: cover; box-shadow: 0 24px 64px rgba(6,46,35,0.18); }
+    .badge-float { position: absolute; bottom: -1.5rem; right: -1rem; background: linear-gradient(135deg,#ffa500,#ff6b00); color: #fff; border-radius: 16px; padding: 1rem 1.4rem; box-shadow: 0 12px 32px rgba(255,165,0,0.3); }
+    .badge-float .num { font-size: 1.7rem; font-weight: 900; line-height: 1; }
+    .badge-float .lbl { font-size: 0.75rem; opacity: 0.9; margin-top: 2px; }
+    .check-list { list-style: none; }
+    .check-list li { display: flex; gap: 0.7rem; margin-bottom: 0.9rem; color: #333; font-size: 0.95rem; align-items: flex-start; }
+    .check-list li span.chk { color: #ffa500; font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-img-wrap"><img src="LOGO.png" alt="SK Solar Bikaner" /></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">होम</a>
+      <a href="about.html" class="active">हमारे बारे में</a>
+      <a href="services.html">सेवाएं</a>
+      <a href="projects.html">प्रोजेक्ट्स</a>
+      <a href="calculator.html">कैलकुलेटर</a>
+      <a href="contact.html" class="nav-cta">संपर्क करें</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 होम</a>
+    <a href="about.html">ℹ️ हमारे बारे में</a>
+    <a href="services.html">⚡ सेवाएं</a>
+    <a href="projects.html">📸 प्रोजेक्ट्स</a>
+    <a href="calculator.html">🔢 कैलकुलेटर</a>
+    <a href="contact.html">📞 संपर्क करें</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <img class="page-hero-bg" src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?w=1600&q=80&auto=format&fit=crop" alt="Solar installation team" />
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-tag">🌿 हमारी कहानी</div>
+    <h1>बिकानेर का <span>भरोसेमंद</span><br/>सोलर पार्टनर</h1>
+    <p>2015 से SK Solar Bikaner राजस्थान में solar energy को आम लोगों तक पहुंचा रहा है। 500+ घरों में solar की रोशनी।</p>
+    <div class="breadcrumb">
+      <a href="index.html">होम</a>&nbsp;<i class="fas fa-chevron-right" style="font-size:0.65rem"></i>&nbsp;<span>हमारे बारे में</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-track">
+    <span class="trust-item"><i class="fas fa-certificate"></i> MNRE Certified</span>
+    <span class="trust-item"><i class="fas fa-shield-alt"></i> 25 Year Warranty</span>
+    <span class="trust-item"><i class="fas fa-bolt"></i> PM Surya Ghar Approved</span>
+    <span class="trust-item"><i class="fas fa-star"></i> 4.8★ JustDial</span>
+    <span class="trust-item"><i class="fas fa-tools"></i> Free Site Survey</span>
+    <span class="trust-item"><i class="fas fa-hand-holding-usd"></i> EMI Available</span>
+    <span class="trust-item"><i class="fas fa-certificate"></i> MNRE Certified</span>
+    <span class="trust-item"><i class="fas fa-shield-alt"></i> 25 Year Warranty</span>
+    <span class="trust-item"><i class="fas fa-bolt"></i> PM Surya Ghar Approved</span>
+    <span class="trust-item"><i class="fas fa-star"></i> 4.8★ JustDial</span>
+    <span class="trust-item"><i class="fas fa-tools"></i> Free Site Survey</span>
+    <span class="trust-item"><i class="fas fa-hand-holding-usd"></i> EMI Available</span>
+  </div>
+</div>
+
+<!-- OUR STORY -->
+<section class="section">
+  <div class="container">
+    <div class="grid-2" style="align-items:center;gap:4rem;">
+      <div>
+        <span class="section-tag">📖 हमारी कहानी</span>
+        <h2 class="section-title text-left">कैसे शुरू हुआ SK Solar Bikaner</h2>
+        <p style="color:#555;line-height:1.85;margin-bottom:1.2rem;">SK Solar Bikaner की शुरुआत 2015 में हुई जब Bikaner के local entrepreneurs ने देखा कि राजस्थान की तेज़ धूप का सही इस्तेमाल नहीं हो रहा। तब से आज तक हम 500+ परिवारों और व्यापारियों को solar energy की ओर ले जा चुके हैं।</p>
+        <p style="color:#555;line-height:1.85;margin-bottom:1.6rem;">हम MNRE (Ministry of New and Renewable Energy) से empanelled हैं और PM Surya Ghar: Muft Bijli Yojana के approved vendor हैं। हमारा मानना है कि हर घर को सस्ती, साफ और अपनी बिजली मिलनी चाहिए।</p>
+        <ul class="check-list">
+          <li><span class="chk">✦</span> B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner</li>
+          <li><span class="chk">✦</span> Monday – Saturday: 9AM – 7PM</li>
+          <li><span class="chk">✦</span> Phone: +91 90013 19866</li>
+          <li><span class="chk">✦</span> JustDial Verified — 4.8★ Rating</li>
+        </ul>
+        <div style="margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Free Consultation</a>
+          <a href="services.html" class="btn-secondary"><i class="fas fa-bolt"></i> हमारी सेवाएं</a>
+        </div>
+      </div>
+      <div style="position:relative;">
+        <img class="story-img" src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=700&q=80&auto=format&fit=crop" alt="Solar installation Bikaner" loading="lazy" />
+        <div class="badge-float">
+          <div class="num">2015</div>
+          <div class="lbl">से सेवा में</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">📊 हमारी उपलब्धियां</span>
+      <h2 class="section-title">Numbers जो बोलते हैं</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card"><span class="stat-num">500+</span><span class="stat-label">Successful Installations</span></div>
+      <div class="stat-card"><span class="stat-num">4.8★</span><span class="stat-label">JustDial Rating</span></div>
+      <div class="stat-card"><span class="stat-num">₹78K</span><span class="stat-label">Max Subsidy Facilitated</span></div>
+      <div class="stat-card"><span class="stat-num">10+</span><span class="stat-label">Years of Experience</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO BG: MISSION -->
+<section class="section-photo-bg">
+  <img class="pbg-img" src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1600&q=80&auto=format&fit=crop" alt="Solar field Rajasthan" />
+  <div class="pbg-overlay"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🎯 हमारा मिशन</span>
+      <h2 class="section-title">हर छत पर सूरज की ऊर्जा</h2>
+      <p class="section-desc">हमारा लक्ष्य है कि Bikaner के हर घर में affordable solar energy पहुंचे। बिजली बिल ₹0 — यही हमारा वादा।</p>
+    </div>
+    <div class="grid-3" style="margin-top:2rem;">
+      <div class="glass-card">
+        <span class="glass-icon">🌞</span>
+        <h3>Clean Energy</h3>
+        <p>100% renewable, zero pollution solar energy से Bikaner को green बनाना हमारा लक्ष्य है।</p>
+      </div>
+      <div class="glass-card">
+        <span class="glass-icon">💰</span>
+        <h3>Maximum Savings</h3>
+        <p>Maximum subsidy और minimum cost पर solar system install करना — हमारी प्रतिबद्धता।</p>
+      </div>
+      <div class="glass-card">
+        <span class="glass-icon">🤝</span>
+        <h3>Lifetime Support</h3>
+        <p>Installation के बाद भी हम आपके साथ — 25 साल की warranty और ongoing support।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🏅 सर्टिफिकेशन</span>
+      <h2 class="section-title">Government Approved & Certified</h2>
+      <p class="section-desc">हम सरकार और industry की हर certification के साथ काम करते हैं।</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert-card"><div class="cert-icon">🏛️</div><div><div class="cert-title">MNRE Empanelled</div><div class="cert-body">Ministry of New & Renewable Energy certified installer</div></div></div>
+      <div class="cert-card"><div class="cert-icon">☀️</div><div><div class="cert-title">PM Surya Ghar</div><div class="cert-body">PM Surya Ghar Muft Bijli Yojana का approved vendor</div></div></div>
+      <div class="cert-card"><div class="cert-icon">⭐</div><div><div class="cert-title">JustDial 4.8★</div><div class="cert-body">Bikaner में verified 4.8 star rating — hundreds of reviews</div></div></div>
+      <div class="cert-card"><div class="cert-icon">🛡️</div><div><div class="cert-title">Quality Assured</div><div class="cert-body">Premium solar panels और inverters with manufacturer warranty</div></div></div>
+      <div class="cert-card"><div class="cert-icon">🔌</div><div><div class="cert-title">Net Metering</div><div class="cert-body">DISCOM approved net metering connection — sell extra power</div></div></div>
+      <div class="cert-card"><div class="cert-icon">💚</div><div><div class="cert-title">RRECL Registered</div><div class="cert-body">Rajasthan Renewable Energy Corp. registered vendor</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO BG: WHY SK SOLAR -->
+<section class="section-photo-bg">
+  <img class="pbg-img" src="https://images.unsplash.com/photo-1584704135557-d0bf8b282c14?w=1600&q=80&auto=format&fit=crop" alt="Solar installation" />
+  <div class="pbg-overlay"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🏆 हमें क्यों चुनें</span>
+      <h2 class="section-title">SK Solar क्यों है सबसे बेहतर?</h2>
+    </div>
+    <div class="grid-4">
+      <div class="glass-card"><span class="glass-icon">⚡</span><h3>तेज़ Installation</h3><p>7 दिनों में पूरा system तैयार</p></div>
+      <div class="glass-card"><span class="glass-icon">📋</span><h3>Free Paperwork</h3><p>Subsidy की सारी process हम करते हैं</p></div>
+      <div class="glass-card"><span class="glass-icon">💰</span><h3>EMI Available</h3><p>0% interest पर सोलर लगाएं</p></div>
+      <div class="glass-card"><span class="glass-icon">🔧</span><h3>24/7 Support</h3><p>कोई भी problem — तुरंत solution</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section about-cta">
+  <div class="container">
+    <h2>हमसे मिलें — Free Consultation!</h2>
+    <p>B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner<br/>आज ही call करें और free site survey book करें।</p>
+    <div class="cta-btns">
+      <a href="tel:+919001319866" class="btn-cta-white"><i class="fas fa-phone"></i> 090013 19866</a>
+      <a href="https://wa.me/919001319866" target="_blank" class="btn-cta-dark"><i class="fab fa-whatsapp"></i> WhatsApp करें</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="margin-bottom:1.2rem;"><div class="logo-img-wrap" style="display:inline-flex;"><img src="LOGO.png" alt="SK Solar" /></div></div>
+        <p style="font-size:0.9rem;line-height:1.7;">बिकानेर में MNRE certified solar installer। PM Surya Ghar subsidy से इंस्टॉलेशन तक — सब कुछ हम।</p>
+        <div class="footer-social">
+          <a href="https://wa.me/919001319866" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+919001319866"><i class="fas fa-phone"></i></a>
+          <a href="mailto:sksolar.bikaner@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">होम</a></li>
+          <li><a href="about.html">हमारे बारे में</a></li>
+          <li><a href="services.html">सेवाएं</a></li>
+          <li><a href="projects.html">प्रोजेक्ट्स</a></li>
+          <li><a href="calculator.html">कैलकुलेटर</a></li>
+          <li><a href="contact.html">संपर्क करें</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>सेवाएं</h4>
+        <ul class="footer-links">
+          <li><a href="services.html">Residential Solar</a></li>
+          <li><a href="services.html">Commercial Solar</a></li>
+          <li><a href="services.html">Agricultural Solar</a></li>
+          <li><a href="services.html">Hybrid System</a></li>
+          <li><a href="services.html">Net Metering</a></li>
+          <li><a href="services.html">AMC & Service</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>संपर्क</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner — 334001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+919001319866" style="color:inherit;text-decoration:none;">+91 90013 19866</a></div>
+        <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/919001319866" target="_blank" style="color:inherit;text-decoration:none;">WhatsApp Chat</a></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sat: 9AM – 7PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SK Solar Bikaner. All rights reserved.</span>
+      <span>🌞 Powered by Solar Energy | Bikaner, Rajasthan</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919001319866?text=नमस्ते! मुझे SK Solar Bikaner से solar installation के बारे में जानकारी चाहिए।" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').style.background = window.scrollY > 50 ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.97)';
+});
+</script>
+</body>
+</html>

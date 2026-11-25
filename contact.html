@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>संपर्क करें | SK Solar Bikaner</title>
+  <meta name="description" content="SK Solar Bikaner से संपर्क करें। Rooftop solar, PM Surya Ghar subsidy guidance और free site survey के लिए call या WhatsApp करें।" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/shared.css" />
+  <style>
+    .contact-hero {
+      min-height: min(640px, calc(100vh - 70px));
+      background: #062e23;
+    }
+
+    .contact-hero .page-hero-bg {
+      object-position: center 54%;
+    }
+
+    .contact-hero .page-hero-overlay {
+      background:
+        linear-gradient(90deg, rgba(4, 33, 26, 0.9) 0%, rgba(4, 33, 26, 0.74) 50%, rgba(4, 33, 26, 0.28) 100%),
+        linear-gradient(0deg, rgba(4, 33, 26, 0.3), transparent 55%);
+    }
+
+    .contact-hero .page-hero-content {
+      width: min(1120px, 100%);
+      text-align: left;
+      padding-top: 6rem;
+      padding-bottom: 5rem;
+    }
+
+    .contact-hero .page-hero-content h1,
+    .contact-hero .page-hero-content p {
+      max-width: 700px;
+      margin-left: 0;
+    }
+
+    .contact-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin: 1.8rem 0 1.3rem;
+    }
+
+    .contact-hero-actions .btn-outline {
+      border-color: rgba(255, 255, 255, 0.75);
+      color: #fff;
+    }
+
+    .contact-hero-actions .btn-outline:hover {
+      background: #fff;
+      color: #064e3b;
+    }
+
+    .contact-menu-button {
+      border: 0;
+      background: transparent;
+      color: #fff;
+    }
+
+    .contact-section {
+      padding: 5rem 0;
+      background: #f8faf9;
+    }
+
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 0.88fr 1.12fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .contact-info-panel {
+      padding: 2rem;
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 100% 0, rgba(16, 185, 129, 0.18), transparent 34%),
+        linear-gradient(145deg, #062e23, #064e3b);
+      color: #fff;
+      box-shadow: 0 16px 40px rgba(6, 46, 35, 0.14);
+    }
+
+    .contact-info-panel h2,
+    .contact-form-card h2 {
+      margin: 0 0 0.55rem;
+      font: 800 1.5rem/1.3 'Poppins', sans-serif;
+    }
+
+    .contact-info-intro {
+      margin: 0 0 1.6rem;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .contact-detail {
+      display: flex;
+      gap: 0.95rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-detail-icon {
+      display: grid;
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      place-items: center;
+      border-radius: 13px;
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffc14d;
+      font-size: 1rem;
+    }
+
+    .contact-detail h3 {
+      margin: 0 0 0.2rem;
+      color: #fff;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .contact-detail p,
+    .contact-detail a {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 0.88rem;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-detail a {
+      text-decoration: none;
+    }
+
+    .contact-detail a:hover {
+      color: #ffc14d;
+    }
+
+    .contact-directions {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-top: 0.5rem;
+      color: #ffc14d !important;
+      font-weight: 700;
+    }
+
+    .contact-form-card {
+      padding: 2rem;
+      border: 1px solid rgba(6, 78, 59, 0.1);
+      border-radius: 24px;
+      background: #fff;
+      box-shadow: 0 12px 36px rgba(6, 46, 35, 0.08);
+    }
+
+    .contact-form-card .section-tag {
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-form-intro {
+      margin: 0 0 1.5rem;
+      color: #66756e;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .contact-form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .contact-field {
+      min-width: 0;
+    }
+
+    .contact-field.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .contact-field label {
+      display: block;
+      margin-bottom: 0.45rem;
+      color: #274137;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .contact-field input,
+    .contact-field select,
+    .contact-field textarea {
+      width: 100%;
+      min-height: 48px;
+      padding: 0.75rem 0.9rem;
+      border: 1px solid #dce7e1;
+      border-radius: 12px;
+      outline: none;
+      background: #fff;
+      color: #183229;
+      font: 400 0.92rem 'Inter', sans-serif;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .contact-field textarea {
+      min-height: 118px;
+      resize: vertical;
+    }
+
+    .contact-field input:focus,
+    .contact-field select:focus,
+    .contact-field textarea:focus {
+      border-color: #0b7656;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.13);
+    }
+
+    .contact-submit {
+      width: 100%;
+      justify-content: center;
+      margin-top: 1rem;
+      font: 700 0.95rem 'Inter', sans-serif;
+    }
+
+    #formStatus {
+      display: none;
+      margin: 0.9rem 0 0;
+      padding: 0.7rem 0.85rem;
+      border-radius: 10px;
+      font-size: 0.85rem;
+    }
+
+    #formStatus.error-text {
+      display: block;
+      background: #fff1f0;
+      color: #a12622;
+    }
+
+    #formStatus.success-text {
+      display: block;
+      background: #edf9f2;
+      color: #17613e;
+    }
+
+    .privacy-note {
+      margin: 0.85rem 0 0;
+      color: #75827c;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+
+    .contact-cta {
+      background:
+        radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.2), transparent 28%),
+        linear-gradient(135deg, #062e23 0%, #064e3b 58%, #0b664f 100%);
+    }
+
+    @media (max-width: 860px) {
+      .contact-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info-panel {
+        order: 2;
+      }
+    }
+
+    @media (max-width: 580px) {
+      .contact-hero {
+        min-height: 590px;
+      }
+
+      .contact-hero .page-hero-content {
+        padding: 4.5rem 1.25rem 3.5rem;
+      }
+
+      .contact-hero .page-hero-overlay {
+        background: linear-gradient(90deg, rgba(4, 33, 26, 0.9), rgba(4, 33, 26, 0.58));
+      }
+
+      .contact-section {
+        padding: 3.5rem 0;
+      }
+
+      .contact-info-panel,
+      .contact-form-card {
+        padding: 1.35rem;
+        border-radius: 20px;
+      }
+
+      .contact-form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-field.full-width {
+        grid-column: auto;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .trust-track {
+        animation: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="SK Solar Bikaner home">
+        <div class="logo-img-wrap"><img src="LOGO.png" alt="SK Solar Bikaner" /></div>
+      </a>
+      <div class="nav-links" aria-label="मुख्य नेविगेशन">
+        <a href="index.html">होम</a>
+        <a href="about.html">हमारे बारे में</a>
+        <a href="services.html">सेवाएं</a>
+        <a href="projects.html">प्रोजेक्ट्स</a>
+        <a href="calculator.html">कैलकुलेटर</a>
+        <a href="contact.html" class="nav-cta active" aria-current="page">संपर्क करें</a>
+      </div>
+      <button class="hamburger contact-menu-button" id="contactMenuButton" type="button" aria-label="मेन्यू खोलें" aria-expanded="false" aria-controls="contactMobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="contactMobileMenu">
+      <a href="index.html">होम</a>
+      <a href="about.html">हमारे बारे में</a>
+      <a href="services.html">सेवाएं</a>
+      <a href="projects.html">प्रोजेक्ट्स</a>
+      <a href="calculator.html">कैलकुलेटर</a>
+      <a href="contact.html" aria-current="page">संपर्क करें</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-hero contact-hero">
+      <img class="page-hero-bg" src="assets/images/roof-solar-3.jpg" alt="Solar panels के साथ modern rooftop installation" fetchpriority="high" />
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <div class="page-hero-tag"><i class="fa-solid fa-comments" aria-hidden="true"></i> हम आपकी मदद के लिए हैं</div>
+        <h1>सोलर की शुरुआत<br /><span>एक सही बातचीत से</span></h1>
+        <p>Rooftop solar, subsidy guidance या free site survey—अपनी जरूरत बताएं, SK Solar Bikaner से बात करें।</p>
+        <div class="contact-hero-actions">
+          <a href="#contact-form" class="btn-primary"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Enquiry भेजें</a>
+          <a href="tel:+919001319866" class="btn-outline"><i class="fa-solid fa-phone" aria-hidden="true"></i> 090013 19866</a>
+        </div>
+        <div class="breadcrumb">
+          <a href="index.html">होम</a><i class="fa-solid fa-chevron-right" aria-hidden="true"></i><span>संपर्क करें</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="trust-bar" aria-label="हमसे संपर्क करने के तरीके">
+      <div class="trust-track">
+        <span class="trust-item"><i class="fa-solid fa-phone" aria-hidden="true"></i> सीधे Call करें</span>
+        <span class="trust-item"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp पर पूछें</span>
+        <span class="trust-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bikaner में हमारा Office</span>
+        <span class="trust-item"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Free Site Survey</span>
+        <span class="trust-item"><i class="fa-solid fa-phone" aria-hidden="true"></i> सीधे Call करें</span>
+        <span class="trust-item"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp पर पूछें</span>
+        <span class="trust-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bikaner में हमारा Office</span>
+        <span class="trust-item"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i> Free Site Survey</span>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">संपर्क और सलाह</span>
+          <h2 class="section-title">बताइए, आपके लिए क्या कर सकते हैं?</h2>
+          <p class="section-desc">Call करें, WhatsApp करें या form भरें—हम आपकी solar जरूरत समझने में मदद करेंगे।</p>
+        </div>
+
+        <div class="contact-layout">
+          <aside class="contact-info-panel" aria-labelledby="contactInfoTitle">
+            <h2 id="contactInfoTitle">हमसे सीधे मिलें</h2>
+            <p class="contact-info-intro">SK Solar team से बात करें या Bikaner के office पर आएं।</p>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+              <div>
+                <h3>Office का पता</h3>
+                <p>B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner, Rajasthan — 334001</p>
+                <a class="contact-directions" href="https://www.google.com/maps/search/?api=1&query=B%2F48%2C%20Norwa%20House%2C%20Indira%20Colony%2C%20Bikaner" target="_blank" rel="noopener noreferrer">
+                  <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Directions देखें
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+              <div>
+                <h3>Call करें</h3>
+                <a href="tel:+919001319866">090013 19866 / +91 90013 19866</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+              <div>
+                <h3>WhatsApp</h3>
+                <a href="https://wa.me/919001319866" target="_blank" rel="noopener noreferrer">WhatsApp पर message भेजें</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <span class="contact-detail-icon"><i class="fa-regular fa-clock" aria-hidden="true"></i></span>
+              <div>
+                <h3>काम करने का समय</h3>
+                <p>सोमवार–शनिवार: सुबह 9:00 से शाम 7:00 बजे<br />रविवार: Call पर सहायता</p>
+              </div>
+            </div>
+          </aside>
+
+          <section class="contact-form-card" id="contact-form" aria-labelledby="contactFormTitle">
+            <span class="section-tag">Free Consultation</span>
+            <h2 id="contactFormTitle">अपनी जानकारी भेजें</h2>
+            <p class="contact-form-intro">नीचे details भरें। Submit करने पर आपका message WhatsApp में खुलेगा, जहां से आप उसे भेज सकते हैं।</p>
+
+            <form id="contactForm">
+              <div class="contact-form-grid">
+                <div class="contact-field">
+                  <label for="contactName">आपका नाम / Full Name *</label>
+                  <input id="contactName" name="name" type="text" autocomplete="name" placeholder="जैसे: Ramesh Kumar" required />
+                </div>
+                <div class="contact-field">
+                  <label for="contactPhone">मोबाइल नंबर / Mobile Number *</label>
+                  <input id="contactPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="10 अंकों का मोबाइल नंबर" required />
+                </div>
+                <div class="contact-field full-width">
+                  <label for="contactService">कौन-सी service चाहिए? *</label>
+                  <select id="contactService" name="service" required>
+                    <option value="Rooftop Solar (PM Surya Ghar subsidy)">घर के लिए Rooftop Solar (PM Surya Ghar subsidy)</option>
+                    <option value="Commercial and Factory Solar">Commercial और Factory Solar</option>
+                    <option value="Hybrid and Battery Inverter">Hybrid और Battery Inverter</option>
+                    <option value="Agricultural Solar Water Pump">खेती के लिए Solar Water Pump</option>
+                    <option value="Solar Cleaning and Maintenance">Solar Cleaning और Maintenance</option>
+                  </select>
+                </div>
+                <div class="contact-field full-width">
+                  <label for="contactRequirement">आपकी जरूरत / Requirement</label>
+                  <textarea id="contactRequirement" name="requirement" placeholder="अपना monthly बिजली bill, location या पसंदीदा system size बताएं..."></textarea>
+                </div>
+              </div>
+              <button class="btn-primary contact-submit" type="submit"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp पर Message भेजें</button>
+              <p id="formStatus" role="status" aria-live="polite"></p>
+              <p class="privacy-note">आपकी enquiry WhatsApp पर खुलेगी; यह form जानकारी website पर save नहीं करता।</p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section contact-cta">
+      <div class="container">
+        <h2>आज ही Free Site Survey बुक करें</h2>
+        <p>Bikaner में अपने rooftop के लिए सही solar setup की जानकारी लें।</p>
+        <div class="cta-btns">
+          <a href="tel:+919001319866" class="btn-cta-white"><i class="fa-solid fa-phone" aria-hidden="true"></i> 090013 19866 पर Call करें</a>
+          <a href="https://wa.me/919001319866" class="btn-cta-dark" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp करें</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div style="margin-bottom:1.2rem;"><div class="logo-img-wrap" style="display:inline-flex;"><img src="LOGO.png" alt="SK Solar Bikaner" /></div></div>
+          <p style="font-size:0.9rem;line-height:1.7;">Bikaner में आपका solar partner। Rooftop solar, subsidy guidance और site survey के लिए हमसे संपर्क करें।</p>
+          <div class="footer-social">
+            <a href="https://wa.me/919001319866" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel:+919001319866" aria-label="Call करें"><i class="fa-solid fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto:sksolar.bikaner@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">होम</a></li>
+            <li><a href="about.html">हमारे बारे में</a></li>
+            <li><a href="services.html">सेवाएं</a></li>
+            <li><a href="projects.html">प्रोजेक्ट्स</a></li>
+            <li><a href="calculator.html">कैलकुलेटर</a></li>
+            <li><a href="contact.html">संपर्क करें</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>सेवाएं</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Residential Solar</a></li>
+            <li><a href="services.html">Commercial Solar</a></li>
+            <li><a href="services.html">Agricultural Solar</a></li>
+            <li><a href="services.html">Net Metering</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>संपर्क</h4>
+          <div class="footer-contact-item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner — 334001</span></div>
+          <div class="footer-contact-item"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+919001319866" style="color:inherit;text-decoration:none;">+91 90013 19866</a></div>
+          <div class="footer-contact-item"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><a href="https://wa.me/919001319866" target="_blank" rel="noopener noreferrer" style="color:inherit;text-decoration:none;">WhatsApp Chat</a></div>
+          <div class="footer-contact-item"><i class="fa-regular fa-clock" aria-hidden="true"></i><span>Mon–Sat: 9AM – 7PM</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span class="year">2026</span> SK Solar Bikaner. सर्वाधिकार सुरक्षित।</span>
+        <span>Bikaner, Rajasthan | Clean Solar Energy</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919001319866?text=नमस्ते! मुझे SK Solar Bikaner से solar installation के बारे में जानकारी चाहिए।"
+    class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp पर SK Solar से बात करें">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="assets/site.js"></script>
+  <script>
+    const contactMenuButton = document.getElementById('contactMenuButton');
+    const contactMobileMenu = document.getElementById('contactMobileMenu');
+
+    contactMenuButton.addEventListener('click', () => {
+      const isOpen = contactMobileMenu.classList.toggle('open');
+      contactMenuButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    contactMobileMenu.addEventListener('click', (event) => {
+      if (event.target.closest('a')) {
+        contactMobileMenu.classList.remove('open');
+        contactMenuButton.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>

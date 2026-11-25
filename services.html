@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>सेवाएं | SK Solar Bikaner</title>
+  <meta name="description" content="SK Solar Bikaner की सेवाएं — Residential, Commercial, Agricultural Solar। PM Surya Ghar subsidy, Net Metering, Hybrid Systems, AMC।" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/shared.css" />
+  <style>
+    .services-cta {
+      background:
+        radial-gradient(circle at 88% 18%, rgba(16, 185, 129, 0.2), transparent 28%),
+        linear-gradient(135deg, #062e23 0%, #064e3b 58%, #0b664f 100%);
+    }
+
+    .service-section { padding: 5rem 0; }
+    .service-section.alt { background: #f8faf9; }
+    .service-row { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .service-row.reverse .service-img-col { order: -1; }
+    @media(max-width:860px) { .service-row, .service-row.reverse .service-img-col { grid-template-columns: 1fr; } .service-row.reverse .service-img-col { order: 0; } }
+    .service-img { width: 100%; height: 380px; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 60px rgba(6,46,35,0.15); }
+    .service-icon-big { width: 68px; height: 68px; background: linear-gradient(135deg,#064e3b,#065f46); border-radius: 20px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; color: #ffa500; margin-bottom: 1.2rem; }
+    .service-title { font-family: 'Poppins',sans-serif; font-size: clamp(1.5rem,3vw,2.1rem); font-weight: 800; color: #062e23; margin: 0.5rem 0 1rem; line-height: 1.2; }
+    .service-desc { color: #555; line-height: 1.85; margin-bottom: 1.4rem; font-size: 0.98rem; }
+    .benefit-list { list-style: none; margin-bottom: 2rem; }
+    .benefit-list li { display: flex; gap: 0.7rem; margin-bottom: 0.65rem; color: #333; font-size: 0.93rem; align-items: flex-start; }
+    .benefit-list li i { color: #064e3b; margin-top: 3px; flex-shrink: 0; }
+    .steps-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1.5rem; }
+    @media(max-width:768px) { .steps-grid { grid-template-columns: 1fr 1fr; } }
+    .step-card { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.22); border-radius: 20px; padding: 2rem 1.4rem; text-align: center; backdrop-filter: blur(8px); position: relative; }
+    .step-num { width: 48px; height: 48px; background: #ffa500; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; font-weight: 900; color: #fff; margin: 0 auto 1rem; font-family: 'Poppins',sans-serif; }
+    .step-title { color: #fff; font-weight: 700; font-size: 1rem; margin-bottom: 0.4rem; }
+    .step-desc { color: rgba(255,255,255,0.78); font-size: 0.85rem; line-height: 1.6; margin: 0; }
+    .subsidy-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+    @media(max-width:600px) { .subsidy-row { grid-template-columns: 1fr; } }
+    .subsidy-card { background: #fff; border-radius: 20px; padding: 2.2rem 1.6rem; text-align: center; box-shadow: 0 4px 24px rgba(6,46,35,0.07); border: 2px solid transparent; transition: border-color 0.2s, transform 0.2s; }
+    .subsidy-card:hover { border-color: #ffa500; transform: translateY(-6px); }
+    .subsidy-card.featured { border-color: #ffa500; background: linear-gradient(135deg,rgba(255,165,0,0.04),rgba(255,107,0,0.04)); }
+    .subsidy-kw { font-size: 2rem; font-weight: 900; color: #064e3b; font-family: 'Poppins',sans-serif; }
+    .subsidy-amt { font-size: 2.4rem; font-weight: 900; color: #ffa500; font-family: 'Poppins',sans-serif; margin: 0.3rem 0; }
+    .subsidy-label { font-size: 0.85rem; color: #666; }
+    .best-badge { display: inline-block; background: #ffa500; color: #fff; font-size: 0.72rem; font-weight: 700; padding: 0.25rem 0.8rem; border-radius: 999px; margin-top: 0.8rem; letter-spacing: 0.05em; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="logo-img-wrap"><img src="LOGO.png" alt="SK Solar Bikaner" /></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">होम</a>
+      <a href="about.html">हमारे बारे में</a>
+      <a href="services.html" class="active">सेवाएं</a>
+      <a href="projects.html">प्रोजेक्ट्स</a>
+      <a href="calculator.html">कैलकुलेटर</a>
+      <a href="contact.html" class="nav-cta">संपर्क करें</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">🏠 होम</a>
+    <a href="about.html">ℹ️ हमारे बारे में</a>
+    <a href="services.html">⚡ सेवाएं</a>
+    <a href="projects.html">📸 प्रोजेक्ट्स</a>
+    <a href="calculator.html">🔢 कैलकुलेटर</a>
+    <a href="contact.html">📞 संपर्क करें</a>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <img class="page-hero-bg" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80&auto=format&fit=crop" alt="Solar panels installation" />
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="page-hero-tag">⚡ हमारी सेवाएं</div>
+    <h1>हर जरूरत के लिए<br/><span>Solar Solution</span></h1>
+    <p>घर से लेकर खेत तक — SK Solar के पास हर solar जरूरत का समाधान है। PM Surya Ghar subsidy के साथ।</p>
+    <div class="breadcrumb">
+      <a href="index.html">होम</a>&nbsp;<i class="fas fa-chevron-right" style="font-size:0.65rem"></i>&nbsp;<span>सेवाएं</span>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-track">
+    <span class="trust-item"><i class="fas fa-certificate"></i> MNRE Certified</span>
+    <span class="trust-item"><i class="fas fa-shield-alt"></i> 25 Year Warranty</span>
+    <span class="trust-item"><i class="fas fa-bolt"></i> PM Surya Ghar Approved</span>
+    <span class="trust-item"><i class="fas fa-star"></i> 4.8★ JustDial</span>
+    <span class="trust-item"><i class="fas fa-tools"></i> Free Site Survey</span>
+    <span class="trust-item"><i class="fas fa-hand-holding-usd"></i> EMI Available</span>
+    <span class="trust-item"><i class="fas fa-certificate"></i> MNRE Certified</span>
+    <span class="trust-item"><i class="fas fa-shield-alt"></i> 25 Year Warranty</span>
+    <span class="trust-item"><i class="fas fa-bolt"></i> PM Surya Ghar Approved</span>
+    <span class="trust-item"><i class="fas fa-star"></i> 4.8★ JustDial</span>
+    <span class="trust-item"><i class="fas fa-tools"></i> Free Site Survey</span>
+    <span class="trust-item"><i class="fas fa-hand-holding-usd"></i> EMI Available</span>
+  </div>
+</div>
+
+<!-- SERVICE 1: RESIDENTIAL -->
+<section class="service-section">
+  <div class="container">
+    <div class="service-row">
+      <div>
+        <div class="service-icon-big"><i class="fas fa-home"></i></div>
+        <span class="section-tag">🏠 घर के लिए</span>
+        <h2 class="service-title">Residential Solar System</h2>
+        <p class="service-desc">घर की छत पर सोलर पैनल लगाएं और बिजली बिल ₹0 करें। PM Surya Ghar योजना के तहत ₹78,000 तक की सरकारी सब्सिडी और net metering से बची हुई बिजली सरकार को बेचें।</p>
+        <ul class="benefit-list">
+          <li><i class="fas fa-check-circle"></i> बिजली बिल में 90–100% की बचत</li>
+          <li><i class="fas fa-check-circle"></i> PM Surya Ghar subsidy ₹33,000–₹78,000</li>
+          <li><i class="fas fa-check-circle"></i> 25 साल की panel warranty</li>
+          <li><i class="fas fa-check-circle"></i> Net Metering — extra बिजली बेचें</li>
+          <li><i class="fas fa-check-circle"></i> Easy 0% EMI financing available</li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Free Quote लें</a>
+      </div>
+      <div>
+        <img class="service-img" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80&auto=format&fit=crop" alt="Residential solar panels" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 2: COMMERCIAL -->
+<section class="service-section alt">
+  <div class="container">
+    <div class="service-row reverse">
+      <div>
+        <div class="service-icon-big"><i class="fas fa-industry"></i></div>
+        <span class="section-tag">🏭 व्यापार के लिए</span>
+        <h2 class="service-title">Commercial Solar System</h2>
+        <p class="service-desc">दुकान, फैक्ट्री, स्कूल, अस्पताल — हर commercial establishment के लिए custom solar solution। बिजली लागत 70% तक कम करें और ROI 3–4 साल में पाएं।</p>
+        <ul class="benefit-list">
+          <li><i class="fas fa-check-circle"></i> बिजली लागत 60–70% कम</li>
+          <li><i class="fas fa-check-circle"></i> Custom sizing 5kW से 500kW तक</li>
+          <li><i class="fas fa-check-circle"></i> Commercial accelerated depreciation benefit</li>
+          <li><i class="fas fa-check-circle"></i> ROI 3–4 साल में</li>
+          <li><i class="fas fa-check-circle"></i> Dedicated account manager</li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Commercial Quote</a>
+      </div>
+      <div class="service-img-col">
+        <img class="service-img" src="https://images.unsplash.com/photo-1584704135557-d0bf8b282c14?w=700&q=80&auto=format&fit=crop" alt="Commercial solar installation" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 3: AGRICULTURAL -->
+<section class="service-section">
+  <div class="container">
+    <div class="service-row">
+      <div>
+        <div class="service-icon-big"><i class="fas fa-seedling"></i></div>
+        <span class="section-tag">🌾 खेती के लिए</span>
+        <h2 class="service-title">Agricultural Solar System</h2>
+        <p class="service-desc">खेत में solar pump और solar power system लगाएं। सिंचाई का खर्च पूरी तरह खत्म करें। राजस्थान सरकार की agricultural solar subsidy का पूरा फायदा उठाएं।</p>
+        <ul class="benefit-list">
+          <li><i class="fas fa-check-circle"></i> Solar pump — सिंचाई का खर्च ₹0</li>
+          <li><i class="fas fa-check-circle"></i> State + Central combined subsidy</li>
+          <li><i class="fas fa-check-circle"></i> 3-Phase solar pump 3HP – 15HP</li>
+          <li><i class="fas fa-check-circle"></i> खेत में बिजली — lighting + equipment</li>
+          <li><i class="fas fa-check-circle"></i> PM Kusum scheme eligible</li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Agricultural Quote</a>
+      </div>
+      <div>
+        <img class="service-img" src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=700&q=80&auto=format&fit=crop" alt="Agricultural solar field" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 4: HYBRID -->
+<section class="service-section alt">
+  <div class="container">
+    <div class="service-row reverse">
+      <div>
+        <div class="service-icon-big"><i class="fas fa-battery-full"></i></div>
+        <span class="section-tag">🔋 Battery Backup</span>
+        <h2 class="service-title">Hybrid Solar System</h2>
+        <p class="service-desc">Battery backup के साथ 24/7 uninterrupted power। लोडशेडिंग की कोई टेंशन नहीं। दिन में solar से चलाएं, रात में battery से। Grid पर depend नहीं।</p>
+        <ul class="benefit-list">
+          <li><i class="fas fa-check-circle"></i> 24/7 power — no load shedding</li>
+          <li><i class="fas fa-check-circle"></i> Lithium Iron Phosphate (LiFePO4) batteries</li>
+          <li><i class="fas fa-check-circle"></i> Grid + Solar + Battery combination</li>
+          <li><i class="fas fa-check-circle"></i> Smart energy management</li>
+          <li><i class="fas fa-check-circle"></i> Mobile app monitoring</li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Hybrid Quote</a>
+      </div>
+      <div class="service-img-col">
+        <img class="service-img" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=700&q=80&auto=format&fit=crop" alt="Hybrid solar system" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 5: NET METERING -->
+<section class="service-section">
+  <div class="container">
+    <div class="service-row">
+      <div>
+        <div class="service-icon-big"><i class="fas fa-network-wired"></i></div>
+        <span class="section-tag">⚡ Earn Money</span>
+        <h2 class="service-title">Net Metering Setup</h2>
+        <p class="service-desc">अपनी extra solar बिजली DISCOM को बेचें और हर महीने income earn करें। SK Solar आपका पूरा Net Metering connection — application से approval तक — handle करेगा।</p>
+        <ul class="benefit-list">
+          <li><i class="fas fa-check-circle"></i> DISCOM application और approval</li>
+          <li><i class="fas fa-check-circle"></i> Bi-directional meter installation</li>
+          <li><i class="fas fa-check-circle"></i> Monthly earnings from excess power</li>
+          <li><i class="fas fa-check-circle"></i> Online monitoring dashboard</li>
+          <li><i class="fas fa-check-circle"></i> Annual settlement से extra income</li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> Net Metering Setup</a>
+      </div>
+      <div>
+        <img class="service-img" src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?w=700&q=80&auto=format&fit=crop" alt="Net metering installation" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE 6: AMC -->
+<section class="service-section alt">
+  <div class="container">
+    <div class="service-row reverse">
+      <div>
+        <div class="service-icon-big"><i class="fas fa-wrench"></i></div>
+        <span class="section-tag">🔧 After Sales</span>
+        <h2 class="service-title">AMC & Maintenance</h2>
+        <p class="service-desc">Solar system की regular servicing से performance 15–20% बढ़ती है। SK Solar का AMC plan — panel cleaning, inverter checkup, wiring inspection — सब कुछ cover।</p>
+        <ul class="benefit-list">
+          <li><i class="fas fa-check-circle"></i> Quarterly panel cleaning</li>
+          <li><i class="fas fa-check-circle"></i> Inverter और wiring inspection</li>
+          <li><i class="fas fa-check-circle"></i> Performance monitoring और report</li>
+          <li><i class="fas fa-check-circle"></i> Emergency breakdown support</li>
+          <li><i class="fas fa-check-circle"></i> Warranty claim assistance</li>
+        </ul>
+        <a href="contact.html" class="btn-primary"><i class="fas fa-phone"></i> AMC Plan लें</a>
+      </div>
+      <div class="service-img-col">
+        <img class="service-img" src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=700&q=80&auto=format&fit=crop" alt="Solar maintenance" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO BG: PROCESS -->
+<section class="section-photo-bg">
+  <img class="pbg-img" src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?w=1600&q=80&auto=format&fit=crop" alt="Installation process" />
+  <div class="pbg-overlay"></div>
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🔄 Installation Process</span>
+      <h2 class="section-title">4 Easy Steps में Solar Ready!</h2>
+      <p class="section-desc">Free survey से लेकर subsidy disbursement तक — सब कुछ हम handle करते हैं।</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">1</div>
+        <div class="step-title">Free Site Survey</div>
+        <p class="step-desc">हमारा expert आपके घर/दुकान पर free survey करेगा। Roof area, shadow analysis, load calculation।</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">2</div>
+        <div class="step-title">Design & Quote</div>
+        <p class="step-desc">Custom solar system design तैयार। Detailed quotation with subsidy calculation और ROI report।</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">3</div>
+        <div class="step-title">Installation</div>
+        <p class="step-desc">Advance booking पर 7 दिन में installation complete। MNRE certified technicians द्वारा।</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">4</div>
+        <div class="step-title">Subsidy & Net Metering</div>
+        <p class="step-desc">PM Surya Ghar application, DISCOM approval, Net metering setup — सब हम करते हैं।</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUBSIDY SECTION -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">🏛️ PM Surya Ghar Subsidy</span>
+      <h2 class="section-title">कितनी Subsidy मिलेगी?</h2>
+      <p class="section-desc">PM Surya Ghar: Muft Bijli Yojana के तहत 3kW+ system पर ₹78,000 की subsidy।</p>
+    </div>
+    <div class="subsidy-row">
+      <div class="subsidy-card">
+        <div class="subsidy-kw">1 kW</div>
+        <div class="subsidy-amt">₹33,000</div>
+        <div class="subsidy-label">Central Subsidy</div>
+        <div style="margin-top:1rem;font-size:0.85rem;color:#666;">छोटे घर के लिए<br/>~125 units/month</div>
+      </div>
+      <div class="subsidy-card">
+        <div class="subsidy-kw">2 kW</div>
+        <div class="subsidy-amt">₹66,000</div>
+        <div class="subsidy-label">Central Subsidy</div>
+        <div style="margin-top:1rem;font-size:0.85rem;color:#666;">मध्यम घर के लिए<br/>~250 units/month</div>
+      </div>
+      <div class="subsidy-card featured">
+        <div class="subsidy-kw">3 kW+</div>
+        <div class="subsidy-amt">₹78,000</div>
+        <div class="subsidy-label">Maximum Subsidy</div>
+        <div style="margin-top:1rem;font-size:0.85rem;color:#666;">बड़े घर के लिए<br/>~375+ units/month</div>
+        <div class="best-badge">BEST VALUE</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:2.5rem;">
+      <a href="calculator.html" class="btn-primary"><i class="fas fa-calculator"></i> अपनी Subsidy Calculate करें</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section services-cta">
+  <div class="container">
+    <h2>आज ही Free Quote लें!</h2>
+    <p>किसी भी service के लिए call करें — हमारे expert 24 घंटे में response देंगे।</p>
+    <div class="cta-btns">
+      <a href="tel:+919001319866" class="btn-cta-white"><i class="fas fa-phone"></i> 090013 19866</a>
+      <a href="https://wa.me/919001319866" target="_blank" class="btn-cta-dark"><i class="fab fa-whatsapp"></i> WhatsApp करें</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="margin-bottom:1.2rem;"><div class="logo-img-wrap" style="display:inline-flex;"><img src="LOGO.png" alt="SK Solar" /></div></div>
+        <p style="font-size:0.9rem;line-height:1.7;">बिकानेर में MNRE certified solar installer। PM Surya Ghar subsidy से इंस्टॉलेशन तक — सब कुछ हम।</p>
+        <div class="footer-social">
+          <a href="https://wa.me/919001319866" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="tel:+919001319866"><i class="fas fa-phone"></i></a>
+          <a href="mailto:sksolar.bikaner@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">होम</a></li><li><a href="about.html">हमारे बारे में</a></li><li><a href="services.html">सेवाएं</a></li><li><a href="projects.html">प्रोजेक्ट्स</a></li><li><a href="calculator.html">कैलकुलेटर</a></li><li><a href="contact.html">संपर्क करें</a></li></ul></div>
+      <div><h4>सेवाएं</h4><ul class="footer-links"><li><a href="services.html">Residential Solar</a></li><li><a href="services.html">Commercial Solar</a></li><li><a href="services.html">Agricultural Solar</a></li><li><a href="services.html">Hybrid System</a></li><li><a href="services.html">Net Metering</a></li><li><a href="services.html">AMC & Service</a></li></ul></div>
+      <div>
+        <h4>संपर्क</h4>
+        <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>B/48, Norwa House, Near Baba Ramdev Mandir, Indira Colony, Bikaner — 334001</span></div>
+        <div class="footer-contact-item"><i class="fas fa-phone"></i><a href="tel:+919001319866" style="color:inherit;text-decoration:none;">+91 90013 19866</a></div>
+        <div class="footer-contact-item"><i class="fab fa-whatsapp"></i><a href="https://wa.me/919001319866" target="_blank" style="color:inherit;text-decoration:none;">WhatsApp Chat</a></div>
+        <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sat: 9AM – 7PM</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 SK Solar Bikaner. All rights reserved.</span>
+      <span>🌞 Powered by Solar Energy | Bikaner, Rajasthan</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919001319866?text=नमस्ते! मुझे SK Solar Bikaner की services के बारे में जानकारी चाहिए।" class="wa-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').style.background = window.scrollY > 50 ? 'rgba(255,255,255,0.98)' : 'rgba(255,255,255,0.97)';
+});
+</script>
+</body>
+</html>
